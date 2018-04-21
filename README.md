@@ -30,6 +30,15 @@ A file named `cards.csv` will be created, it contains the following informations
 
 Note that the file does not have a header row.
 
+## Required libraries
+* os
+* json
+* urllib
+* multiprocessing
+* argparse
+* time
+* random
+
 # Credits
 This product uses the TMDb API but is not endorsed or certified by TMDb
 
