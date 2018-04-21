@@ -24,9 +24,9 @@ A file named `cards.csv` will be created, it contains the following informations
 
 | Movie title | Year of Release | HTML img with the filename |
 |:---:|:---:|:---:|
-| Movie 1 | 2015 | <img src="movie_1_poster.jpg" /> |
-| Movie 2 | 1996 | <img src="movie_2_poster.jpg" /> |
-| Movie 3 | 1984 | <img src="movie_3_poster.jpg" /> |
+| Movie 1 | 2015 | `<img src="movie_1_poster.jpg" />` |
+| Movie 2 | 1996 | `<img src="movie_2_poster.jpg" />` |
+| Movie 3 | 1984 | `<img src="movie_3_poster.jpg" />` |
 
 Note that the file does not have a header row.
 
