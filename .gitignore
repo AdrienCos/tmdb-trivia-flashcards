@@ -99,3 +99,15 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# CSV files
+*.csv
+
+# Test files
+start.sh
+
+# VSCode folder
+.vscode/
+
+# Poster images folder
+pics/
