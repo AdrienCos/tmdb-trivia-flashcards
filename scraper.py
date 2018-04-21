@@ -61,9 +61,18 @@ def download_poster(movie, api_key=api_key, base_url=base_image_url, pics_folder
 def scrape(csv_path=csv_path, api_key=api_key, base_url=base_image_url, pics_folder=pics_folder):
     """Given the path to a CSV file, downloads every poster image related to
     the movies in the file, and creates a new CSV file suited for Anki import"""
+    output = open("cards.csv", "w")
     movies = read_csv(csv_path)
     for movie in movies:
-        download_poster(movie, api_key, base_image_url)
+        filename = download_poster(movie, api_key, base_image_url)
+        name = movie["name"]
+        year = movie["year"]
+        img_field = "<img src='%s' />\n" % filename
+        card = "%s\t%s\t%s" % (name, year, img_field)
+        print(card)
+        output.write(card)
+    output.close()
+
     return len(movies)
 
 if __name__ == '__main__':
